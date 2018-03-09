@@ -7,6 +7,7 @@ function timeType(){
 }
 
 function timer(seconds){
+  var seconds = seconds
   global.setInterval(function() {
     if(seconds === 0) {
       console.log("Time is up!");

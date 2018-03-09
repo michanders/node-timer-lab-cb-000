@@ -12,7 +12,7 @@ function timer(seconds){
     }
     else {
       seconds--;
-      console.log("Left: +" `${seconds}`+"s");
+      console.log(`Left: ${seconds}s`);
     }
   }, 1000)
 }

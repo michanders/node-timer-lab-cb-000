@@ -22,9 +22,3 @@ function secondsTimer(seconds){
     }
   }, 1000)
 }
-
-function minutesTimer(minutes){
-  let min = minutes - 1;
-  let seconds = 60;
-  secondsTimer(seconds);
-}

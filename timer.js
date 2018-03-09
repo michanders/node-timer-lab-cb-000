@@ -1,5 +1,5 @@
 function timeType(){
-  let [timeNum,units] = process.argv[2].split("");
+  let [time, type] = process.argv[2].split("");
   type === "min" ? timer(num*60) : timer(num);
 }
 

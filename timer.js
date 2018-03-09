@@ -6,8 +6,6 @@ function timeType(){
   timer(num);
 }
 
-timeType();
-
 function timer(seconds){
   global.setInterval(function() {
     if(seconds === 0) {
@@ -20,3 +18,5 @@ function timer(seconds){
     }
   }, 1000)
 }
+
+timeType();

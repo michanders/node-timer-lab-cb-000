@@ -15,18 +15,16 @@ function secondsTimer(seconds){
     if(seconds === 0){
       console.log("Time is up!");
       global.clearInterval(this);
-    }else{
-      seconds--;
-      console.log(`Left: ${seconds}s`);
-
     }
-
-
+    else{
+      seconds--;
+      console.log("Left: +" `${seconds}`+"s");
+    }
   }, 1000)
 }
 
 function minutesTimer(minutes){
-    let min = minutes - 1;
-    let seconds = 60;
-    secondsTimer(seconds);
+  let min = minutes - 1;
+  let seconds = 60;
+  secondsTimer(seconds);
 }

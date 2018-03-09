@@ -3,7 +3,7 @@ function timeType(){
   var type = time[1];
   var num = time[0];
   type === "min" ? (num = num*60) : num;
-  time(num);
+  timer(num);
 }
 
 timeType();
@@ -20,4 +20,3 @@ function timer(seconds){
     }
   }, 1000)
 }
-

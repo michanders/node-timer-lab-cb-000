@@ -1,18 +1,16 @@
-function timer(){
-  let seconds, minutes;
-  let [timeNum,units] = process.argv[2].split("");
-   units === "s" ? seconds = timeNum : minutes = timeNum;
-  seconds ? secondsTimer(seconds) : minutesTimer(minutes);
-
+function timeType(){
+  const time = process.argv[2].split("");
+  var type = time[1];
+  var num = time[0];
+  type === "min" ? (num = num*60) : num;
+  time(num);
 }
 
-timer();
+timeType();
 
-
-function secondsTimer(seconds){
-  let seconds = 60;
-  global.setInterval(function(){
-    if(seconds === 0){
+function timer(seconds){
+  global.setInterval(function() {
+    if(seconds === 0) {
       console.log("Time is up!");
       global.clearInterval(this);
     }
@@ -22,3 +20,4 @@ function secondsTimer(seconds){
     }
   }, 1000)
 }
+

@@ -7,6 +7,9 @@ function timeType(){
 
 function timer(seconds){
   global.setInterval(function() {
+    if(seconds === 60){
+      console.log("Left: 59s")
+    }
     if(seconds === 0) {
       console.log("Time is up!");
       global.clearInterval(this);

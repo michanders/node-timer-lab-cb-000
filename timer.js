@@ -1,6 +1,8 @@
 function timeType(){
-  let [time, type] = process.argv[2].split("");
-  type === "min" ? timer(time*60) : timer(time);
+  let time = process.argv[2].split("");
+  var type = time[1];
+  var num = parseInt(time[0]);
+  type === "min" ? timer(num*60) : timer(num);
 }
 
 function timer(seconds){
@@ -12,7 +14,7 @@ function timer(seconds){
     }
     else {
       seconds--;
-      console.log(`Left: ${seconds}s`);
+      console.log("Left: +" `${seconds}`+"s");
     }
   }, 1000)
 }

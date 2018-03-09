@@ -1,5 +1,5 @@
 function timeType(){
-  const time = process.argv[2].split("");
+  const time = process.argv[1].split("");
   var type = time[1];
   var num = time[0];
   type === "min" ? (num = num*60) : num;

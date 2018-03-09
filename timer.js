@@ -10,13 +10,13 @@ timer();
 
 
 function secondsTimer(seconds){
-
+  let seconds = 60;
   global.setInterval(function(){
     if(seconds === 0){
       console.log("Time is up!");
       global.clearInterval(this);
     }
-    else{
+    else {
       seconds--;
       console.log("Left: +" `${seconds}`+"s");
     }
